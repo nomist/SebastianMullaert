@@ -1,0 +1,417 @@
+.section-main {
+    background-color: #000000;
+    background-image: url(/img/hero-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 805px;
+    width: 100%;
+}
+
+/* Navigation */
+
+.nav {
+    display: flex;
+    height: 78px;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0 14px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #ffffff;
+    opacity: .8;
+}
+
+.nav-item {
+    display: inline-block;
+    padding: 0 46px;
+    line-height: 78px;
+    position: relative;
+}
+
+.nav-item-active::before {
+    content: '';
+    display: block;
+    background-image: url(/img/nav-underline-active.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80%;
+    height: 4px;
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-item:hover::before {
+    content: '';
+    display: block;
+    background-image: url(/img/nav-underline.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80%;
+    height: 4px;
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-center-items {
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+/* Typography */
+
+.note {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+}
+
+.caption {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0;
+}
+
+.title-hero {
+    font-family: Quattrocento, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 100px;
+}
+
+.sign {
+    font-family: Quattrocento, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 100px;
+    opacity: .55;
+}
+
+.title-section {
+    font-family: Quattrocento, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 64px;
+}
+
+.paragraph-indent {
+    display: inline-block;
+    width: 160px;
+}
+
+.text-content {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 0 0 28px;
+}
+
+.text-highlight {
+    color: #71870E;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.link {
+    text-decoration: none;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    color: #CD9A3D;
+    position: relative;
+}
+
+.link::before {
+    content: '';
+    display: block;
+    background-image: url(/img/link-underline.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80px;
+    height: 4px;
+    position: absolute;
+    top: 50%;
+    left: -120%;
+    transform: translateY(-50%);
+}
+
+/* Typography Local */
+
+.section-main .note {
+    color: #ffffff;
+    opacity: .9;
+}
+
+.section-secondary .note {
+    color: #71870E;
+    opacity: .8;
+}
+
+.section-main .caption {
+    color: #ffffff;
+    opacity: .9;
+    text-align: right;
+    margin: 0 480px 0 0;
+}
+
+.section-secondary .caption {
+    color: #000000;
+    opacity: .55;
+    position: absolute;
+    margin: 0;
+}
+
+.section-secondary .text-content {
+    opacity: .85;
+}
+
+.section-main .title-hero {
+    margin: 75px 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.section-about .note {
+    text-align: right;
+}
+
+.section-philisophy .paragraph-indent {
+    width: 100px;
+}
+
+.section-philisophy .note {
+    text-align: right;
+    margin: 75px 160px 0 0;
+}
+
+.section-philisophy .link {
+    display: inline-block;
+    margin-top: 42px;
+}
+
+.section-balance .section-head {
+    margin-bottom: 75px;
+}
+
+.section-balance .title-hero {
+    margin: 0;
+}
+
+.section-balance .paragraph-indent {
+    width: 250px;
+}
+
+.section-balance .sign {
+    margin: 0;
+    position: absolute;
+    top: 0;
+}
+
+.section-balance .section-head .caption {
+    top: 60px;
+    left: 56px;
+}
+
+.section-balance .balance-img-container .caption {
+    position: relative;
+    top: 35px;
+    left: 0;
+    text-align: center;
+}
+
+.section-balance .note {
+    text-align: right;
+}
+
+.section-process .title-section {
+    color: #ffffff;
+}
+
+.section-process .text-content {
+    color: #ffffff;
+    opacity: .85;
+}
+
+.section-process .caption {
+    color: #ffffff;
+    opacity: .55;
+}
+
+.section-process .note {
+    text-align: right;
+}
+
+/* Containers */
+
+.content {
+    margin: 200px auto 0;
+}
+
+.section-main .content {
+    padding: 0 135px;
+    margin: 102px auto 0;
+}
+
+.section-about {
+    padding: 0 60px;
+}
+
+.section-about .article {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.article .note {
+    margin-top: 75px;
+}
+
+.section-philisophy .content {
+    padding: 0 60px 0 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-philisophy .article {
+    margin-left: 150px;
+}
+
+.container-article {
+    /* style */
+}
+
+.section-philisophy .container-article {
+    width: 504px;
+}
+
+.collage {
+    position: relative;
+    margin-right: 140px;
+}
+
+.section-balance .content {
+    padding: 0 236px 0 196px;
+}
+
+.balance-img-container {
+    position: absolute;
+    width: 150px;
+    top: 50%;
+    right: -170px;
+    transform: translateY(-50%);
+}
+
+.section-process .content {
+    background-color: #0b0b0b;
+}
+
+.section-process .container-article {
+    width: 898px;
+    padding: 100px 0 200px;
+    margin: 0 auto;
+}
+
+.section-process .title-section {
+    margin: 75px 0 100px;
+}
+
+.section-process .article {
+    width: 490px;
+    margin: 0 auto;
+}
+
+.section-inspiration .title-section {
+    margin: 0 0 100px;
+}
+
+.section-inspiration .section-head {
+    width: 540px;
+    margin: 0 auto;
+}
+
+.section-inspiration .paragraph-indent {
+    width: 100px;
+}
+
+.cotainer-tiles {
+    padding: 0 135px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tile-small {
+    width: 265px;
+    text-align: center;
+}
+
+.tile-big {
+    width: 490px;
+}
+
+/* Images */
+
+.portrait {
+    display: block;
+    width: 640px;
+    margin: 75px auto 0;
+}
+
+.collage-img-big {
+    width: 464px;
+}
+
+.collage-img-small {
+    width: 260px;
+    position: absolute;
+    right: -120px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.balance-img {
+    width: 150px;
+}
+
+.process-img {
+    width: 100%;
+}
+
+.violin-img {
+    width: 265px;
+    margin-top: 75px;
+}
+
+.piano-img {
+    width: 265px;
+    margin-bottom: 75px;
+}
+
+.nature-img {
+    width: 490px;
+}
+
+/* Heads */
+
+.section-head {
+    position: relative;
+}
+
+.section-about .section-head {
+    width: 1090px;
+    margin: 75px auto 100px;
+}
