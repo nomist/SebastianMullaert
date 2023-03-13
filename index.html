@@ -4,22 +4,22 @@
     <meta charset="utf-8" />
     <meta type="description" content="Sebastian Mullaert. Musical artist, live performer, record producer & DJ" />
     <title>Sebastian Mullaert. Musical artist, live performer, record producer & DJ</title>
-    <link rel="stylesheet" href="/style/normalize.css">
-    <link rel="stylesheet" href="/style/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quattrocento">
+    <link rel="stylesheet" href="/style/normalize.css">
+    <link rel="stylesheet" href="/style/style.css">
   </head>
   <body>
     <header id="mainSection" class="section-main">
       <nav class="nav">
-        <a class="nav-item nav-item-active" href="">Home</a>
-        <div class="nav-center-items">
-          <a class="nav-item" href="">Biography</a>
-          <a class="nav-item" href="">Studio</a>
-          <a class="nav-item" href="">Music</a>
-          <a class="nav-item" href="">Education</a>
-        </div>
-        <a class="nav-item" href="">Contact</a>
+        <ul class="nav-list">
+          <li class="nav-item nav-item-active"><a href="">Home</a></li>
+          <li class="nav-item"><a href="">Biography</a></li>
+          <li class="nav-item"><a href="">Studio</a></li>
+          <li class="nav-item"><a href="">Music</a></li>
+          <li class="nav-item"><a href="">Education</a></li>
+          <li class="nav-item"><a href="">Contact</a></li>
+        </ul>
       </nav>
       <div class="content">
         <p class="note">The simplicity of being</p>
@@ -36,7 +36,6 @@
         <header class="section-head">
           <p class="caption">(About)</p>
           <h2 class="title-section">
-            <span class="paragraph-indent"></span>
             <span class="text-italic">Musical artist,</span> live performer, record producer <span class="text-highlight">&</span> DJ
           </h2>
         </header>
@@ -58,7 +57,6 @@
             <header class="section-head">
               <p class="caption">(Philosophy)</p>
               <h2 class="title-section">
-                <span class="paragraph-indent"></span>
                 Convergence of <span class="text-highlight">Zen meditation,</span> <span class="text-italic">nature</span> & creativity
               </h2>
             </header>
@@ -83,17 +81,15 @@
           <p class="sign">“</p>
           <p class="caption">(True balance in itself)</p>
           <h2 class="title-hero">
-            <span class="paragraph-indent"></span>
             As human beings <span class="text-italic">we are created</span>  <span class="text-highlight">/</span>
           </h2>
           <h2 class="title-hero">
-            <span class="paragraph-indent"></span>
             And the <span class="text-highlight">creativity</span> — is just flowing through us.*
-          <span class="paragraph-indent"></span></h2>
-          <div class="balance-img-container">
+          </h2>
+          <figure class="balance-img-container">
             <img class="balance-img" src="/img/balance.jpg" alt="Balance">
-            <p class="caption">flourishing</p>
-          </div>
+            <figcaption class="caption">flourishing</figcaption>
+          </figure>
         </header>
         <p class="note">And that’s creativity</p>
         <a href="#">The present moment</a>
@@ -109,7 +105,6 @@
           <header class="section-head">
             <p class="caption">(Process)</p>
             <h2 class="title-section">
-              <span class="paragraph-indent"></span>
               <span class="text-italic">The generation</span> of a new modern-classical <span class="text-highlight">concept</span>
             </h2>
           </header>
@@ -127,7 +122,6 @@
         <header class="section-head">
           <p class="caption">(Inspiration)</p>
           <h2 class="title-section">
-            <span class="paragraph-indent"></span>
             Creativity <span class="text-highlight">&</span> life are inseparable
           </h2>
         </header>
@@ -155,11 +149,9 @@
           <p class="sign">“</p>
           <p class="caption">(To the present)</p>
           <h2 class="title-hero">
-            <span class="paragraph-indent"></span>
             To move to music connects you <span class="text-highlight">to the moment /</span>
           </h2>
           <h2 class="title-hero">
-            <span class="paragraph-indent"></span>
             What’s important — what’s meaningful <span class="text-highlight">in life.</span>
           </h2>
           <p class="caption">People return to themselves</p>
@@ -176,7 +168,6 @@
           <header class="section-head">
             <p class="caption">(discography)</p>
             <h2 class="title-section">
-              <span class="paragraph-indent"></span>
               Musical recording
             </h2>
           </header>
@@ -192,8 +183,12 @@
           <div class="player-bottom">
             <p class="text-content">Bridge the gap between electronic and modern classical music.</p>
             <p>Views of Natthall</p>
-            <p>00.00 / 05.49</p>
-            <div class="track-line">_______________</div>
+            <audio controls>
+              <source src="viewsofnatthall.ogg" type="audio/ogg">
+              <source src="viewsofnatthall.mp3" type="audio/mpeg">
+              <source src="viewsofnatthall.wav" type="audio/wav">
+            Your browser does not support the audio element.
+            </audio>
           </div>
         </div>
       </div>
@@ -206,7 +201,6 @@
         <header class="section-head">
           <p class="caption">(Soon)</p>
           <h2 class="title-section">
-            <span class="paragraph-indent"></span>
             Upcoming events and <span class="text-highlight">concerts</span>
           </h2>
         </header>
@@ -253,14 +247,13 @@
         <header class="section-head">
           <p class="caption">(Booking)</p>
           <h2 class="title-section">
-            <span class="paragraph-indent"></span>
             Send an email
           </h2>
         </header>
         <p class="note">If you have a general or project enquiry, please drop me an email — available now</p>
         <form type="submit">
           <label for="email">Email</label>
-          <input type="text" id="email" name="email" placeholder="Your email"><br>
+          <input type="email" id="email" name="email" placeholder="Your email"><br>
           <label for="name">Name</label>
           <input type="text" id="name" name="name" placeholder="Your name"><br>
           <label for="message">Message</label>
@@ -282,7 +275,7 @@
     <footer>
       <div class="content">
         <div class="footer-section">
-          <h4>About us</h4>
+          <p>About us</p>
           <ul>
             <li><a href="#">Just about</a></li>
             <li><a href="#">News</a></li>
@@ -290,7 +283,7 @@
           </ul>
         </div>
         <div class="footer-section">
-          <h4>Activity</h4>
+          <p>Activity</p>
           <ul>
             <li><a href="#">Education</a></li>
             <li><a href="#">Tour dates</a></li>
@@ -298,15 +291,17 @@
           </ul>
         </div>
         <div class="footer-section">
-          <h4>Connect</h4>
-          <a href="mailto:@circle.of.life">@circle.of.life</a>
+          <p>Connect</p>
+          <a href="https://www.facebook.com/">@circle.of.life</a>
         </div>
         <div class="footer-section">
-          <h4>Joing our mailing list</h4>
+          <p>Joing our mailing list</p>
           <p class="text-content">Sign up to receive an exclusive live recording from Movement Festival as well as private access to discounted tickets for future shows, free track downloads and more.</p>
-          <label for="email">Email</label>
-          <input type="text" id="email" name="email" placeholder="Enter your email"><br>
-          <button type="button">Send</button>
+          <form type="submit">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Enter your email"><br>
+            <button type="button">Send</button>
+          </form>
         </div>
         <div class="footer-section">
           <ul>
